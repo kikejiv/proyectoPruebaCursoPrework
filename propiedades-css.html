@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades CSS</title>
+
+</head>
+<h1>Propiedades mas Utilizadas en CSS</h1>
+<style>
+    section{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+    .card {
+        position: absolute;
+        width: 300px;
+        height: 500px;
+        background: #37c9c9;
+        border-radius: 20px;
+        overflow:hidden;
+        display: flex;
+        flex-direction:column ;
+       
+
+    }
+    .card .fondo img {
+        display: flex;
+        justify-content: center;        
+        width: 100%;
+        height: 250px;
+        border: 3px solid white;
+        z-index: 5;
+        
+    }
+    .card .foto img{
+        display: flex;
+        position: absolute;
+        width: 30%;
+        border-radius: 100px;
+        border: 3px solid white;
+        top: 180px;
+        left: 100px;
+        z-index: 4;
+       
+
+    } 
+    .infoPersonal {
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        top: 50px;    
+        font-size: 1rem;    
+    }
+    .infoPersonal p {
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+       
+    }
+    .info{
+        display: flex;
+        margin-top: 6.5rem;
+        position: relative;
+        justify-content: space-evenly;  
+        background:  #3755c9;
+        height: 200px;   
+        border-radius: 0px 0px 10px 10px;
+        border: 0.2px solid white;  
+    }
+    .info img{
+        width: 25px;
+        border-radius: 100%;
+    }
+    .redes{
+        display: flex;
+        position: absolute;
+        justify-content: space-evenly;
+        background:#40c8c1;
+        height: 200px;
+        border: 0.2px solid blanchedalmond;
+        margin-top: 1rem;
+    }
+    .redes img {
+        border-radius: 100%;
+    }
+</style>
+
+<body>
+   <section>
+       <div class="card">
+           <div class="fondo">
+             <img src="https://us.123rf.com/450wm/nexusplexus/nexusplexus1607/nexusplexus160701683/59628670-digital-imagen-de-fondo-que-presenta-concepto-de-conexi%C3%B3n-global.jpg?ver=6" alt="Foto fondo">
+           </div>
+           <div class="foto">
+            <img src="images/foto-presentacion.png" alt="Presentacion">
+           </div>
+        
+            <div class="infoPersonal">
+                <p>Jose Valencia Sol</p>
+                <p>Full Stack Development</p>
+            
+            </div>
+            
+            <div class="info">
+                <p> <img src="images/ubicacion.png" alt="ubicacion"> Cali-Colombia</p>
+                <p> <img src="images/email.png" alt="email">Email</p>
+
+            </div> 
+            <div class="redes">
+                <p> <img src="images/whatsapp.png" alt="Whatsapp">Whatsapp</p>
+                <p> <img src="images/gh.png" alt="GitHub">GitHub</p>
+                <p> <img src="images/facebook" alt="Facebook">Facebook</p>
+
+            </div>
+        
+        </div>
+      
+   </section> 
+   
+   
+</body>
+</html>
